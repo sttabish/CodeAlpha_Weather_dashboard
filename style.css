@@ -1,0 +1,239 @@
+* {
+    padding: o;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ body{
+    background: url(https://www.thehomepagenetwork.com/wp-content/uploads/2022/01/Banner-Weather.jpg);
+    max-width: 1536px; 
+    margin: auto; 
+    width: 100%;
+    min-height: 695px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+} 
+
+
+/* head */
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header.shadow{
+    background: linear-gradient(135deg, #00feba, #5b548a) ;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    right: 41px;
+    width: 20px;
+}
+.logo img{
+    position: relative;
+    right: 30px;
+    width: 25px;
+    top: -25px;
+}
+.logo span{
+    color: #eed70c;
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+#clock {
+	font-size: 35px;
+	width: 210px;
+    position: relative;
+    top: 40px;
+    left: 83%;	
+    color: #f7f4f4;
+	border: 2px solid rgb(243, 240, 240);
+	border-radius: 50px;
+    padding: 5px 8px;
+}
+
+/* home */
+.home{
+    max-width: 1536px; 
+    margin: auto; 
+    width: 100%;
+    min-height: 695px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center left;
+}
+.home-text{
+    padding-left: 120px;
+    color:#22044b;
+    position: relative;
+    top: -50px;
+}
+.home-text h1{
+    font-size: 2.3rem;
+}
+
+.home-text p{
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+} 
+
+
+.card {
+    width: 100%;
+    max-width: 470px;
+    color: #fff;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    position: relative;
+    left: 8%;
+    top: -80px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(65, 65, 65, 0.308);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+}
+
+.cardContainer {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+   
+ 
+ /* .cardContainer::before {
+    width: 100px;
+    height: 95px;
+    content: "";
+    position: absolute;
+    background-color: rgb(10, 66, 96);
+    z-index: -1;
+    border-radius: 50%;
+    left: 40%;
+    top: 10px;
+    transition: all 1s;
+  }
+  .cardContainer:hover::before {
+    transform: translate(-50px, 50px);
+  }
+    */
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
